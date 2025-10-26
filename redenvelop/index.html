@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>群聊抢红包</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- 音频元素 -->
-    <audio id="open-sound" preload="auto" src="https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3"> </audio>
-    <audio id="click-sound" preload="auto" src="https://assets.mixkit.co/sfx/preview/mixkit-unlock-game-notification-253.mp3"> </audio>
-    <audio id="coin-sound" preload="auto" src="https://assets.mixkit.co/sfx/preview/mixkit-coins-handling-1937.mp3"> </audio>
-    <audio id="close-sound" preload="auto" src="https://assets.mixkit.co/sfx/preview/mixkit-software-interface-back-2575.mp3"> </audio>
-    <audio id="best-luck-sound" preload="auto" src="https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3"> </audio>
+    <!-- 这是一个音频元素 -->
+    <audio id="open-sound" preload="auto" src="https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3">
+    </audio>
+    <audio id="click-sound" preload="auto"
+        src="https://assets.mixkit.co/sfx/preview/mixkit-unlock-game-notification-253.mp3"> </audio>
+    <audio id="coin-sound" preload="auto" src="https://assets.mixkit.co/sfx/preview/mixkit-coins-handling-1937.mp3">
+    </audio>
+    <audio id="close-sound" preload="auto"
+        src="https://assets.mixkit.co/sfx/preview/mixkit-software-interface-back-2575.mp3"> </audio>
+    <audio id="best-luck-sound" preload="auto"
+        src="https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3"> </audio>
     <div class="container">
         <h1>群聊抢红包</h1>
-        
+
         <!-- 红包设置区域 -->
         <div class="red-packet-settings">
             <div class="setting-group">
@@ -28,7 +35,7 @@
                 <input type="number" id="total-people" placeholder="请输入红包个数" min="1" max="50" value="10">
                 <span>个</span>
             </div>
-            
+
             <!-- 红包皮肤选择 -->
             <div class="skin-selection">
                 <label>选择红包皮肤:</label>
@@ -51,11 +58,11 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- 创建红包按钮 -->
             <button id="create-packet" class="create-btn">创建红包</button>
         </div>
-        
+
         <!-- 主内容区域 -->
         <div class="main-content">
             <!-- 红包显示区域 -->
@@ -67,10 +74,10 @@
                         <span class="corner"></span>
                         <span class="corner"></span>
                         <span class="corner"></span>
-                        
+
                         <!-- 粒子效果 -->
                         <div class="particle-effect"></div>
-                        
+
                         <div class="decorative-pattern"></div>
                         <div class="packet-info">
                             <span class="packet-amount">0.00</span>
@@ -85,14 +92,14 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- 抢红包记录区域 -->
             <div class="packet-history">
                 <h3>红包记录</h3>
                 <div id="history-list" class="history-list">
                     <p class="empty-tip">暂无记录</p>
                 </div>
-                
+
                 <!-- 统计结果区域 -->
                 <div id="statistics" class="statistics">
                     <div class="stat-item best">
@@ -111,7 +118,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- 结果弹窗 -->
     <div id="result-modal" class="modal">
         <div class="modal-content">
@@ -131,11 +138,12 @@
             </div>
         </div>
     </div>
-    
+
     <!-- 金币效果容器 -->
     <div id="coins-container"></div>
-    
+
     <!-- 脚本 -->
     <script src="script.js"></script>
 </body>
+
 </html>
